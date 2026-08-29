@@ -1,0 +1,210 @@
+/* =========================
+   Login Page
+========================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f8faf9;
+}
+
+
+/* =========================
+   Login Card
+========================= */
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 45px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.login-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.login-logo {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: #176b4d;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.login-header h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.login-header p {
+  color: #6b7280;
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  border-color: #176b4d;
+}
+
+
+/* =========================
+   Password
+========================= */
+
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password-row a {
+  color: #176b4d;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+
+/* =========================
+   Login Button
+========================= */
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #176b4d;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #12553e;
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   Register
+========================= */
+
+.register-section {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-section span {
+  color: #6b7280;
+}
+
+.register-section a {
+  margin-left: 5px;
+  color: #176b4d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Back
+========================= */
+
+.back-home {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.back-home a {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-home a:hover {
+  color: #176b4d;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 500px) {
+
+  .login-card {
+    padding: 30px 25px;
+  }
+
+  .login-header h1 {
+    font-size: 26px;
+  }
+
+}
+
+/* =========================
+   Login Error
+========================= */
+
+.login-error {
+  margin-bottom: 20px;
+
+  padding: 12px 15px;
+
+  border-radius: 8px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  color: #b91c1c;
+
+  font-size: 14px;
+
+  text-align: center;
+}
