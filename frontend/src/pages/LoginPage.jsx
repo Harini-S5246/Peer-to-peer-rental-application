@@ -233,7 +233,7 @@ function LoginPage() {
           </span>
 
 
-          <Link to="/register">
+          <Link to="/Register">
             Create an account
           </Link>
 
