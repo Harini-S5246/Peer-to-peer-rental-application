@@ -9,15 +9,7 @@ function LandingPage() {
   return (
     <div className="landing-page">
 
-      {/* =========================
-          Navigation Bar
-      ========================== */}
-
       <Navbar />
-
-      {/* =========================
-          Hero Section
-      ========================== */}
 
       <section className="hero-section">
 
@@ -61,10 +53,6 @@ function LandingPage() {
 
       </section>
 
-
-      {/* =========================
-          Categories Section
-      ========================== */}
 
       <section className="categories-section">
 
@@ -187,11 +175,6 @@ function LandingPage() {
 
       </section>
 
-
-      {/* =========================
-          How It Works
-      ========================== */}
-
       <section className="how-section">
 
         <div className="section-heading">
@@ -291,10 +274,6 @@ function LandingPage() {
       </section>
 
 
-      {/* =========================
-          Call To Action
-      ========================== */}
-
       <section className="cta-section">
 
         <h2>
@@ -316,9 +295,7 @@ function LandingPage() {
       </section>
 
 
-      {/* =========================
-          Footer
-      ========================== */}
+      {/*Footer*/}
 
       <Footer />
 

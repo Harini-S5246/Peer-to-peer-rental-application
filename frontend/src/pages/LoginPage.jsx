@@ -6,21 +6,12 @@ import "./LoginPage.css";
 function LoginPage() {
 
   const navigate = useNavigate();
-
-  // =========================
-  // State
-  // =========================
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-
-  // =========================
-  // Login Function
-  // =========================
 
   const handleLogin = async (event) => {
 
@@ -39,26 +30,6 @@ function LoginPage() {
 
       console.log("Login successful:", data);
 
-
-      // =========================
-      // Store Login Information
-      // =========================
-
-      /*
-        The exact response depends on your
-        Spring Boot backend.
-
-        Example response:
-
-        {
-          token: "...",
-          user: {
-            id: 1,
-            name: "Harini",
-            email: "harini@gmail.com"
-          }
-        }
-      */
 
       if (data.token) {
 
@@ -79,10 +50,6 @@ function LoginPage() {
       }
 
 
-      // =========================
-      // Navigate After Login
-      // =========================
-
       navigate("/home");
 
     } catch (error) {
@@ -91,11 +58,6 @@ function LoginPage() {
         "Login failed:",
         error
       );
-
-
-      // =========================
-      // Error Handling
-      // =========================
 
       if (error.response) {
 
@@ -135,24 +97,18 @@ function LoginPage() {
   };
 
 
-  // =========================
-  // JSX
-  // =========================
+  
 
   return (
 
     <div className="login-page">
 
-      {/* =========================
-          Login Card
-      ========================== */}
+      {/* Login Card */}
 
       <div className="login-card">
 
 
-        {/* =========================
-            Header
-        ========================== */}
+        {/* Header */}
 
         <div className="login-header">
 
@@ -176,9 +132,7 @@ function LoginPage() {
         </div>
 
 
-        {/* =========================
-            Error Message
-        ========================== */}
+        {/* Error Message*/}
 
         {error && (
 
@@ -189,9 +143,7 @@ function LoginPage() {
         )}
 
 
-        {/* =========================
-            Login Form
-        ========================== */}
+        {/* Login Form */}
 
         <form
           className="login-form"
@@ -199,9 +151,7 @@ function LoginPage() {
         >
 
 
-          {/* =========================
-              Email
-          ========================== */}
+          {/* Email */}
 
           <div className="form-group">
 
@@ -224,9 +174,7 @@ function LoginPage() {
           </div>
 
 
-          {/* =========================
-              Password
-          ========================== */}
+          {/* Password */}
 
           <div className="form-group">
 
@@ -258,9 +206,7 @@ function LoginPage() {
           </div>
 
 
-          {/* =========================
-              Login Button
-          ========================== */}
+          {/* Login Button*/}
 
           <button
             type="submit"
@@ -278,9 +224,7 @@ function LoginPage() {
         </form>
 
 
-        {/* =========================
-            Register
-        ========================== */}
+        {/* Register */}
 
         <div className="register-section">
 
@@ -296,9 +240,7 @@ function LoginPage() {
         </div>
 
 
-        {/* =========================
-            Back to Landing Page
-        ========================== */}
+        {/* Back to Landing Page*/}
 
         <div className="back-home">
 
