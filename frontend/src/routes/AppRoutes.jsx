@@ -7,6 +7,8 @@ import ProductsPage from "../pages/ProductsPage";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
 import PaymentPage from "../pages/PaymentPage";
 import NotificationsPage from "../pages/NotificationsPage";
+import RegisterPage from "../pages/RegisterPage";
+import HomePage from "../pages/HomePage";
 
 function AppRoutes() {
   return (
@@ -18,6 +20,8 @@ function AppRoutes() {
         <Route path="/products/:productId" element={<ProductDetailsPage />}/>
         <Route path="/payment" element={<PaymentPage />}/>
         <Route path="/notifications" element={<NotificationsPage />}/>
+        <Route path="/register" element={<RegisterPage />}/>
+        <Route path="/home" element={<HomePage />}/>
       </Routes>
     </BrowserRouter>
   );

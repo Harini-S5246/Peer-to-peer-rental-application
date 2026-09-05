@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { loginUser } from "../services/api";
 import "./LoginPage.css";
+import { supabase } from "../lib/supabase";
 
 function LoginPage() {
 
@@ -22,8 +22,8 @@ function LoginPage() {
 
     try {
 
-      // Send login details to Spring Boot
-      const data = await loginUser({
+      // Send login details to supabase
+      const {data,error: authError} = await supabase.auth.signInWithPassword({
         email: email,
         password: password,
       });
@@ -31,21 +31,11 @@ function LoginPage() {
       console.log("Login successful:", data);
 
 
-      if (data.token) {
 
-        localStorage.setItem(
-          "token",
-          data.token
-        );
+      if (authError) {
 
-      }
-
-      if (data.user) {
-
-        localStorage.setItem(
-          "user",
-          JSON.stringify(data.user)
-        );
+          setError(authError.message);
+          return;
 
       }
 
@@ -54,40 +44,7 @@ function LoginPage() {
 
     } catch (error) {
 
-      console.error(
-        "Login failed:",
-        error
-      );
-
-      if (error.response) {
-
-        if (error.response.status === 401) {
-
-          setError(
-            "Invalid email or password."
-          );
-
-        } else if (error.response.status === 404) {
-
-          setError(
-            "User account not found."
-          );
-
-        } else {
-
-          setError(
-            "Something went wrong. Please try again."
-          );
-
-        }
-
-      } else {
-
-        setError(
-          "Unable to connect to the server."
-        );
-
-      }
+      setError("An unexpected error occured. Please try again.");
 
     } finally {
 

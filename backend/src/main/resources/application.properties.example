@@ -7,3 +7,6 @@ spring.datasource.password=YOUR_SUPABASE_PASSWORD
 spring.jpa.hibernate.ddl-auto=validate
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
+
+spring.security.oauth2.resourceserver.jwt.issuer-uri=${SUPABASE_ISSUER_URI}
+spring.security.oauth2.resourceserver.jwt.jwk-set-uri=${SUPABASE_JWKS_URI}
