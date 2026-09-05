@@ -9,11 +9,6 @@ const api = axios.create({
   },
 });
 
-
-// =========================
-// Authentication
-// =========================
-
 export const loginUser = async (loginData) => {
   const response = await api.post(
     "/auth/login",
@@ -32,11 +27,6 @@ export const registerUser = async (userData) => {
 
   return response.data;
 };
-
-
-// =========================
-// Products
-// =========================
 
 export const getProducts = async () => {
   const response = await api.get(
@@ -89,11 +79,6 @@ export const deleteProduct = async (productId) => {
   return response.data;
 };
 
-
-// =========================
-// Product Search
-// =========================
-
 export const searchProducts = async (keyword) => {
 
   const response = await api.get(
@@ -108,11 +93,6 @@ export const searchProducts = async (keyword) => {
   return response.data;
 };
 
-
-// =========================
-// Category
-// =========================
-
 export const getProductsByCategory = async (
   category
 ) => {
@@ -123,11 +103,6 @@ export const getProductsByCategory = async (
 
   return response.data;
 };
-
-
-// =========================
-// Rental Requests
-// =========================
 
 export const createRentalRequest = async (
   rentalData
@@ -177,11 +152,6 @@ export const updateRentalRequest = async (
   return response.data;
 };
 
-
-// =========================
-// User Profile
-// =========================
-
 export const getUserProfile = async () => {
 
   const response = await api.get(
@@ -203,11 +173,6 @@ export const updateUserProfile = async (
 
   return response.data;
 };
-
-
-// =========================
-// Notifications
-// =========================
 
 export const getNotifications = async () => {
 

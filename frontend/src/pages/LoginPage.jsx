@@ -116,7 +116,7 @@ function LoginPage() {
             to="/"
             className="login-logo"
           >
-            Lendly
+            ShareSpare
           </Link>
 
 
@@ -126,7 +126,7 @@ function LoginPage() {
 
 
           <p>
-            Login to continue using Lendly.
+            Login to continue using ShareSpare.
           </p>
 
         </div>
@@ -245,7 +245,7 @@ function LoginPage() {
         <div className="back-home">
 
           <Link to="/">
-            ← Back to Lendly
+            ← Back to ShareSpare
           </Link>
 
         </div>

@@ -1,7 +1,3 @@
-/* =========================
-   Footer
-========================= */
-
 .footer {
   padding: 60px 8% 25px;
 
@@ -9,11 +5,6 @@
 
   color: #ffffff;
 }
-
-
-/* =========================
-   Footer Content
-========================= */
 
 .footer-content {
   max-width: 1200px;
@@ -33,10 +24,6 @@
   padding-bottom: 45px;
 }
 
-
-/* =========================
-   Brand
-========================= */
 
 .footer-logo {
   display: inline-block;
@@ -59,11 +46,6 @@
 
   font-size: 14px;
 }
-
-
-/* =========================
-   Footer Columns
-========================= */
 
 .footer-column {
   display: flex;
@@ -95,10 +77,6 @@
   color: #ffffff;
 }
 
-
-/* =========================
-   Footer Bottom
-========================= */
 
 .footer-bottom {
   max-width: 1200px;
@@ -144,10 +122,6 @@
   color: #ffffff;
 }
 
-
-/* =========================
-   Responsive
-========================= */
 
 @media (max-width: 800px) {
 
